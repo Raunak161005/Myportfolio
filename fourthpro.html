@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Rotating Tilted Earth VR</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Dark Sky Universe -->
+      <a-sky color="#0b0c2a"></a-sky>
+
+      <!-- Wrapper with 23.5° Tilt -->
+      <a-entity position="0 1.25 -3" rotation="0 0 0">
+        <!-- Earth Tilt -->
+        <a-entity rotation="0 0 23.5">
+          <!-- Rotating Earth -->
+          <a-sphere 
+            radius="1"
+            src="https://th.bing.com/th/id/R.c727de4473f8978b08a9e5345f2fa8a8?rik=Oo4542b1%2bxLF0Q&riu=http%3a%2f%2fwww.worldmap1.com%2fmap%2fworld%2famp%2fmaps_of_the_world.jpg&ehk=jcQ00Xz5aMtKT8m%2bTqyXr7rWiPhzql6MrRzllzrX664%3d&risl=&pid=ImgRaw&r=0"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear">
+          </a-sphere>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
